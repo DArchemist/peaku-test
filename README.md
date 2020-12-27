@@ -54,7 +54,7 @@ $
 /client \
 Este directorio contiene una vista simple que obtiene una lista de elementos de un servidor, los muestra como una cuadrícula de tarjetas y permite al usuario buscar elementos que coincidan con los títulos y/o descripciones; y filtrar los artículos tanto por tipo de dispositivo (portátiles, tabletas y teléfonos) como por precio.
 
-/server \ 
+/server \
 Este directorio contiene una simple api de Flask que sirve una lista de artículos minados leyendo el archivo output.json.
 
 /scraper \
