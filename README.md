@@ -21,17 +21,20 @@ If you own a Docker/Podman account, you can build the project as follows:
 1. Clone this repository into your machine \
 $ git clone https://github.com/DArchemist/peaku-test.git
 
-2. Build the server docker image \
-$ 
+2. Navigate to the project directory \
+$ cd peaku-test
+
+3. Build the server docker image \
+$ docker build -f Dockerfile.server -t scraper-server .
 
 3. Run the server docker image \
-$
+$ docker run -d --rm -p 5000:5000 scraper-server
 
 4. Build the client docker image \
-$
+$ docker build -f Dockerfile.client -t scraper-client .
 
 5. Run the client docker image \
-$
+$ docker run -d --rm -p 8080:80 scraper-client
 
 6. Visit https://localhost:8080 from your browser, you should see now the project working.
 
@@ -39,10 +42,10 @@ $
 If you want to test the scraper, given that you have cloned this repository, perform the following:
 
 1. Build the scraper docker image \
-$
+$ docker build -f Dockerfile.scraper -t scraper .
 
-2. Run the scraper docker image \
-$ 
+2. Run the scraper docker image (pwd is only compatible with UNIX-based systems) \
+$ docker run -it --rm -v $(ṕwd)/scraper:/app scraper   
 
 
 
