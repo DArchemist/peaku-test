@@ -46,19 +46,18 @@ $
 
 
 
+
+
 ////////////////////////ESPAÑOL/////////////////////////////
 
 
 /client \
-
 Este directorio contiene una vista simple que obtiene una lista de elementos de un servidor, los muestra como una cuadrícula de tarjetas y permite al usuario buscar elementos que coincidan con los títulos y/o descripciones; y filtrar los artículos tanto por tipo de dispositivo (portátiles, tabletas y teléfonos) como por precio.
 
 /servidor \ 
-
 Este directorio contiene una simple api de Flask que sirve una lista de artículos minados leyendo el archivo output.json.
 
 /scraper \
-
 Este directorio contiene un script de Python que hace minería a cada enlace de subcategoría en https://webscraper.io/test-sites/e-commerce/scroll/, devolviendo una lista de diccionarios, cada uno de los cuales corresponde a un solo elemento y sus propiedades/características. Además, el script produce un archivo json (output.json) que contiene los datos minados.
 
 Si quieres ver el proyecto en vivo, visita: http://ec2-35-174-200-43.compute-1.amazonaws.com:8080/
