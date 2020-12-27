@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+            <div id="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+                <img src="https://webscraper.io/images/test-sites/e-commerce/items/cart2.png" alt="logo">
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <form>
+            <h3>Search</h3>
+            <div class="form-group">
+            <label for="">
+                <input id="search" type="text">
+            </label>
+        </div>
+        </form>
+        <form id="form2">
+            <h3>Filter by</h3>
+            <div class="form-group">
+                <label>
+                    <h4>Device</h4>
+                    <select id="device-filter">
+                        <option value="none">Select</option>
+                        <option value="laptops">Laptops</option>
+                        <option value="tablets">Tablets</option>
+                        <option value="touch">Phones</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <h4>Price</h4>
+                <div class="price-filters">
+                    <span>From</span>
+                    <input id="from-filter" type="text">
+                    <span>To</span>
+                    <input id="to-filter" type="text">
+                </div>
+            </div>
+        </form>
+    </aside>
+    <main>
+        <div id="results"></div>
+        <div class="grid"></div>
+    </main>
+    <footer>
+        footer
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
